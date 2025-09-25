@@ -1,7 +1,7 @@
 import { Card, CardContent } from "../../components/ui/card";
 import { Badge } from "../../components/ui/badge";
 import { GraduationCap, MapPin, Languages, Heart } from "lucide-react";
-import profilePhoto from "../../assets/profile-photo.png";
+import profilePhoto from "@/assets/profile-photo.png";
 
 const About = () => {
   const interests = ["Basketball", "Dessin", "Mannequinat"];
