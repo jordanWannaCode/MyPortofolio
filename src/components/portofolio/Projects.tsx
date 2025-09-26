@@ -4,6 +4,7 @@ import { Button } from "../../components/ui/button";
 import { ExternalLink, Github, Layout, Settings, Zap } from "lucide-react";
 
 const Projects = () => {
+  
   const projects = [
     {
       title: "AgroConnect",
@@ -37,8 +38,8 @@ const Projects = () => {
       ],
       status: "Terminé",
       color: "accent",
-      url: "https://votre-url-meme-generator.com", // Remplacez par l'URL réelle
-      githubUrl: "https://github.com/jordanWannaCode/meme-generator" // Remplacez par l'URL GitHub réelle
+      url: "https://jordanwannacode.github.io/MEME_GENERATOR/", // Remplacez par l'URL réelle
+      githubUrl: "https://github.com/jordanWannaCode/MEME_GENERATOR/" // Remplacez par l'URL GitHub réelle
     },
     {
       title: "App de Gestion de Projets",
@@ -53,8 +54,8 @@ const Projects = () => {
       ],
       status: "En développement",
       color: "primary",
-      url: "https://jordanwannacode.github.io/MEME_GENERATOR/",
-      githubUrl: "https://github.com/jordanWannaCode/MEME_GENERATOR/"
+      url: "",
+      githubUrl: ""
     },
   ];
 
@@ -144,8 +145,18 @@ const Projects = () => {
                       size="sm" 
                       className="flex-1"
                       disabled={project.status !== 'Terminé' || !project.url}
-                      onClick={() => project.url && window.open(project.url, '_blank')}
-                    >
+                      
+                      {...project.url && (
+                        <a
+                          href={project.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                        >
+                          Voir le projet
+                        </a>
+                      )}
+                                          >
                       <ExternalLink size={16} className="mr-2" />
                       Voir le projet
                     </Button>
@@ -154,8 +165,18 @@ const Projects = () => {
                       variant="outline" 
                       className="flex-1"
                       disabled={project.status !== 'Terminé' || !project.githubUrl}
-                      onClick={() => project.githubUrl && window.open(project.githubUrl, '_blank')}
-                    >
+
+                      {...project.githubUrl && (
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition"
+                        >
+                          Voir sur GitHub
+                        </a>
+                      )}
+                                          >
                       <Github size={16} className="mr-2" />
                       Code source
                     </Button>

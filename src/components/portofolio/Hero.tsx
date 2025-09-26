@@ -39,13 +39,13 @@ const Hero = () => {
           
           {/* Contact info */}
           <div className="flex flex-wrap justify-center gap-6 mb-10 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            <a href="tel:+22897511636" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+            <a href="tel:+22890184219" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
               <Phone size={18} />
-              +228 97 51 16 36
+              +228 90 18 42 19
             </a>
-            <a href="mailto:regisd16@icloud.com" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+            <a href="mailto:regis.dalmeida@outlook.com" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
               <Mail size={18} />
-              regisd16@icloud.com
+              regis.dalmeida@outlook.com
             </a>
           </div>
           
@@ -71,10 +71,24 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center gap-4 mb-12 animate-slide-up" style={{ animationDelay: '0.8s' }}>
             <Button variant="ghost" size="icon" className="hover:text-primary hover:scale-110 transition-all">
-              <Github size={24} />
+                <a
+                  href="https://github.com/JORDANWANNACODE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary hover:scale-110 transition-all"
+                >
+                  <Github size={24} />
+               </a>
             </Button>
             <Button variant="ghost" size="icon" className="hover:text-primary hover:scale-110 transition-all">
-              <Linkedin size={24} />
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary hover:scale-110 transition-all"
+              >
+                <Linkedin size={24} />
+              </a>
             </Button>
           </div>
           

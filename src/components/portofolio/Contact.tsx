@@ -37,14 +37,14 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "regisd16@icloud.com",
-      href: "mailto:regisd16@icloud.com"
+      value: "regis.dalmeida@outlook.com",
+      href: "mailto:regis.dalmeida@outlook.com"
     },
     {
       icon: Phone,
       title: "Téléphone",
-      value: "+228 97 51 16 36",
-      href: "tel:+22897511636"
+      value: "+228 90 18 42 19",
+      href: "tel:+22890184219"
     },
     {
       icon: MapPin,
@@ -112,14 +112,28 @@ const Contact = () => {
                     size="icon" 
                     className="hover:bg-primary/10 hover:border-primary hover:text-primary transition-all hover:scale-110"
                   >
-                    <Github size={20} />
+                    <a
+                      href="https://github.com/JORDANWANNACODE"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-primary hover:scale-110 transition-all"
+                    >
+                      <Github size={24} />
+                    </a>
                   </Button>
                   <Button 
                     variant="outline" 
                     size="icon" 
                     className="hover:bg-primary/10 hover:border-primary hover:text-primary transition-all hover:scale-110"
                   >
-                    <Linkedin size={20} />
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-primary hover:scale-110 transition-all"
+                    >
+                      <Linkedin size={24} />
+                    </a>
                   </Button>
                 </div>
                 <p className="text-sm text-muted-foreground mt-4">
@@ -214,7 +228,7 @@ const Contact = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   className="glow-primary hover:scale-105 transition-all"
-                  onClick={() => window.location.href = 'mailto:regisd16@icloud.com'}
+                  onClick={() => window.location.href = 'mailto:regis.dalmeida@outlook.com'}
                 >
                   <Mail size={18} className="mr-2" />
                   Discuter d'un projet

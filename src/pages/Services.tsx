@@ -93,11 +93,11 @@ const Services = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button size="lg" className="glow-primary hover:scale-105 transition-all">
                 <Phone size={18} className="mr-2" />
-                +228 97 51 16 36
+                +228 90 18 42 19
               </Button>
               <Button size="lg" variant="outline" className="hover:bg-primary/10">
                 <Mail size={18} className="mr-2" />
-                regisd16@icloud.com
+                regis.dalmeida@outlook.com
               </Button>
             </div>
           </div>
@@ -232,7 +232,7 @@ const Services = () => {
                 <h3 className="font-bold mb-2">IA & Outils</h3>
                 <p className="text-sm text-muted-foreground mb-4">Intelligence artificielle et automatisation</p>
                 <div className="flex flex-wrap gap-2 justify-center">
-                  {["IA Générative", "WordPress", "Git", "SEO"].map((tech) => (
+                  {["IA Générative", "WordPress", "Git", "SEO", "Word", "Excel", "Powerpoint"].map((tech) => (
                     <Badge key={tech} variant="secondary" className="text-xs">{tech}</Badge>
                   ))}
                 </div>
