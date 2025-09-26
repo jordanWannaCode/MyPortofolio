@@ -59,7 +59,7 @@ const Hero = () => {
               size="lg" 
               variant="outline" 
               className="border-primary text-primary hover:bg-primary/10 hover:scale-105 transition-all duration-300"
-              onClick={() => window.location.href = '../pages/services'}
+              onClick={() => window.location.href = '/services'}
             >
               Mes services
             </Button>
