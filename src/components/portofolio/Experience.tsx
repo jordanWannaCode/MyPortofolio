@@ -11,13 +11,13 @@ const Experience = () => {
       location: "Remote",
       type: "Freelance",
       highlights: [
-        "Développement d'un LLM pour la correction de documents juridiques (Mistral via Ollama)",
+        "Développement d'un LLM",
         "Extraction intelligente et structuration de données avec embeddings sémantiques",
         "Optimisation des performances avec traitement par fenêtre glissante",
-        "Implémentation d'indexation vectorielle avec FAISS",
+        "Implémentation d'indexation vectorielle",
         "Interface CLI complète pour conversion PDF/DOCX vers Markdown, JSON, YAML"
       ],
-      technologies: ["Python", "Mistral", "Ollama", "SentenceTransformers", "FAISS", "CLI"]
+      technologies: ["Confidentiel"]
     },
     {
       title: "Stagiaire en développement web",

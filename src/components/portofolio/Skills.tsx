@@ -10,10 +10,10 @@ const Skills = () => {
       title: "Frontend",
       color: "primary",
       skills: [
-        { name: "HTML", level: 95, badge: "Avancé" },
-        { name: "CSS", level: 95, badge: "Avancé" },
-        { name: "JavaScript", level: 75, badge: "Intermédiaire" },
-        { name: "React", level: 70, badge: "Intermédiaire" },
+        { name: "HTML", level: 70, badge: "B1" },
+        { name: "CSS", level: 70, badge: "B1" },
+        { name: "JavaScript", level: 65, badge: "B1" },
+        { name: "React", level: 60, badge: "B1" },
       ]
     },
     {
@@ -21,9 +21,9 @@ const Skills = () => {
       title: "Backend & Base de données",
       color: "accent",
       skills: [
-        { name: "Python", level: 75, badge: "Intermédiaire" },
-        { name: "Flask", level: 70, badge: "Intermédiaire" },
-        { name: "API REST", level: 70, badge: "Intermédiaire" },
+        { name: "Python", level: 75, badge: "B1" },
+        { name: "Flask", level: 65, badge: "B1" },
+        { name: "API REST", level: 65, badge: "B1" },
       ]
     },
     {
@@ -31,10 +31,9 @@ const Skills = () => {
       title: "IA & Technologies avancées",
       color: "primary",
       skills: [
-        { name: "LLM (Mistral/Ollama)", level: 80, badge: "Avancé" },
-        { name: "SentenceTransformers", level: 75, badge: "Intermédiaire" },
-        { name: "FAISS", level: 70, badge: "Intermédiaire" },
-        { name: "Traitement NLP", level: 75, badge: "Intermédiaire" },
+        { name: "LLM ", level: 40, badge: "A2" },
+        { name: "SentenceTransformers", level: 50, badge: "A2" },
+        { name: "Traitement NLP", level: 75, badge: "B1" },
       ]
     },
     {
@@ -42,9 +41,9 @@ const Skills = () => {
       title: "Outils & Productivité",
       color: "accent",
       skills: [
-        { name: "WordPress", level: 75, badge: "Intermédiaire" },
-        { name: "Microsoft Office", level: 90, badge: "Avancé" },
-        { name: "Git/GitHub", level: 80, badge: "Avancé" },
+        { name: "WordPress", level: 75, badge: "B1" },
+        { name: "Microsoft Word, Excel, PowerPoint", level: 75, badge: "AvanB1cé" },
+        { name: "Git/GitHub", level: 70, badge: "B1" },
       ]
     }
   ];

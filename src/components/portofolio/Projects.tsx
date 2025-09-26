@@ -6,46 +6,55 @@ import { ExternalLink, Github, Layout, Settings, Zap } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Designs de Pages Web",
-      description: "Collection de designs modernes et responsives créés avec HTML et CSS, mettant l'accent sur l'expérience utilisateur et l'esthétique contemporaine.",
+      title: "AgroConnect",
+      description: "AgroConnect est une application destinée aux agriculteurs et acheteurs agricoles en Afrique de l'Ouest. Elle vise à connecter les producteurs aux marchés tout en leur fournissant des informations fiables pour optimiser la production, la gestion des cultures et la commercialisation.",
       icon: Layout,
-      technologies: ["HTML5", "CSS3", "Responsive Design", "UI/UX"],
+      technologies: ["..."],
       features: [
-        "Designs responsives multi-appareils",
-        "Animations CSS avancées",
-        "Optimisation des performances",
-        "Standards d'accessibilité"
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
       ],
-      status: "Terminé",
-      color: "primary"
+      status: "En développement",
+      color: "primary",
+      url: null,
+      githubUrl: null
     },
     {
       title: "Générateur de Memes",
       description: "Application amusante qui permet de créer des memes personnalisés avec des templates populaires et des outils de personnalisation.",
       icon: Zap,
-      technologies: ["Python", "Flask", "Templates", "Image Processing"],
+      technologies: ["javascipt", "html", "css", ],
       features: [
-        "Templates de memes populaires",
+        "Galerie de memes",
         "Personnalisation du texte",
         "Interface intuitive",
+        "Partage de memes",
         "Export en haute qualité"
       ],
-      status: "En développement",
-      color: "accent"
+      status: "Terminé",
+      color: "accent",
+      url: "https://votre-url-meme-generator.com", // Remplacez par l'URL réelle
+      githubUrl: "https://github.com/jordanWannaCode/meme-generator" // Remplacez par l'URL GitHub réelle
     },
     {
       title: "App de Gestion de Projets",
       description: "Solution complète pour la gestion et le suivi de projets, avec des fonctionnalités avancées de collaboration et de reporting.",
       icon: Settings,
-      technologies: ["React", "Python", "API REST", "Database"],
+      technologies: ["React", "typescript", "nodejs", "API REST", "mongodb"],
       features: [
         "Dashboard interactif",
         "Collaboration en temps réel",
         "Reporting avancé",
-        "Notifications intelligentes"
+        "Notifications"
       ],
       status: "En développement",
-      color: "primary"
+      color: "primary",
+      url: "https://jordanwannacode.github.io/MEME_GENERATOR/",
+      githubUrl: "https://github.com/jordanWannaCode/MEME_GENERATOR/"
     },
   ];
 
@@ -134,7 +143,8 @@ const Projects = () => {
                     <Button 
                       size="sm" 
                       className="flex-1"
-                      disabled={project.status !== 'Terminé'}
+                      disabled={project.status !== 'Terminé' || !project.url}
+                      onClick={() => project.url && window.open(project.url, '_blank')}
                     >
                       <ExternalLink size={16} className="mr-2" />
                       Voir le projet
@@ -143,7 +153,8 @@ const Projects = () => {
                       size="sm" 
                       variant="outline" 
                       className="flex-1"
-                      disabled={project.status !== 'Terminé'}
+                      disabled={project.status !== 'Terminé' || !project.githubUrl}
+                      onClick={() => project.githubUrl && window.open(project.githubUrl, '_blank')}
                     >
                       <Github size={16} className="mr-2" />
                       Code source
@@ -165,7 +176,10 @@ const Projects = () => {
                 et expérimente avec les dernières technologies. Chaque projet est une opportunité d'apprendre 
                 et de perfectionner mes compétences.
               </p>
-              <Button className="glow-primary hover:scale-105 transition-all">
+              <Button 
+                className="glow-primary hover:scale-105 transition-all"
+                onClick={() => window.open('https://github.com/jordanWannaCode', '_blank')}
+              >
                 <Github size={18} className="mr-2" />
                 Voir tous mes projets sur GitHub
               </Button>

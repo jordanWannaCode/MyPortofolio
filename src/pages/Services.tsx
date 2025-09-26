@@ -53,10 +53,10 @@ const Services = () => {
       popular: false
     },
     {
-      icon: Zap,
-      title: "Optimisation & IA",
-      description: "Amélioration de sites existants et intégration d'IA",
-      features: ["Audit performance", "Correction bugs", "Intégration IA", "Automatisation"],
+      icon: Palette,
+      title: "Design Graphique",
+      description: "Création de designs graphiques",
+      features: ["Design sur-mesure", "Contenu optimisé"],
       price: "À partir de 80€",
       popular: false
     },

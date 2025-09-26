@@ -87,11 +87,11 @@ const About = () => {
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <span>Français</span>
-                  <Badge variant="secondary">Natif</Badge>
+                  <Badge variant="secondary">C1</Badge>
                 </div>
                 <div className="flex items-center justify-between">
                   <span>Anglais</span>
-                  <Badge variant="outline">Avancé</Badge>
+                  <Badge variant="outline">B2</Badge>
                 </div>
               </div>
             </CardContent>
