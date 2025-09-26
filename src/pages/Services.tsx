@@ -2,9 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { 
-  Globe, 
   Smartphone, 
-  ShoppingCart, 
   Database, 
   Zap, 
   Phone, 
@@ -21,28 +19,12 @@ import {
 const Services = () => {
   const services = [
     {
-      icon: Globe,
-      title: "Sites Web Modernes",
-      description: "Sites web responsives et performants avec les dernières technologies",
-      features: ["Design responsive", "Optimisation SEO", "Performance optimale", "Compatible tous appareils"],
-      price: "À partir de 150€",
-      popular: false
-    },
-    {
       icon: Smartphone,
       title: "Sites Vitrines",
       description: "Présence en ligne professionnelle pour votre entreprise",
       features: ["Design sur-mesure", "Contenu optimisé", "Formulaire contact", "Hébergement inclus"],
       price: "À partir de 100€",
       popular: true
-    },
-    {
-      icon: ShoppingCart,
-      title: "E-commerce",
-      description: "Boutiques en ligne complètes pour développer vos ventes",
-      features: ["Catalogue produits", "Panier d'achat", "Paiement sécurisé", "Gestion commandes"],
-      price: "À partir de 300€",
-      popular: false
     },
     {
       icon: Database,

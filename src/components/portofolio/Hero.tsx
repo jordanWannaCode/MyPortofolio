@@ -1,7 +1,10 @@
 import { Button } from "../../components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail, Phone } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: 'smooth' });
@@ -59,7 +62,7 @@ const Hero = () => {
               size="lg" 
               variant="outline" 
               className="border-primary text-primary hover:bg-primary/10 hover:scale-105 transition-all duration-300"
-              onClick={() => window.location.href = '/services'}
+              onClick={() => navigate('/services')}
             >
               Mes services
             </Button>
