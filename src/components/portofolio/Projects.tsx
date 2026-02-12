@@ -39,13 +39,13 @@ const Projects = () => {
       status: "Terminé",
       color: "accent",
       url: "https://jordanwannacode.github.io/MEME_GENERATOR/", // Remplacez par l'URL réelle
-      githubUrl: "https://github.com/jordanWannaCode/MEME_GENERATOR?tab=readme-ov-file" // Remplacez par l'URL GitHub réelle
+      githubUrl: "https://github.com/jordanWannaCode/MEME_GENERATOR" // Remplacez par l'URL GitHub réelle
     },
     {
       title: "App de Gestion de Projets",
       description: "Solution complète pour la gestion et le suivi de projets, avec des fonctionnalités avancées de collaboration et de reporting.",
       icon: Settings,
-      technologies: ["React", "typescript", "nodejs", "API REST", "mongodb"],
+      technologies: ["React", "typescript", "nodejs", "API REST", "mongodb", "Express"],
       features: [
         "Dashboard interactif",
         "Collaboration en temps réel",
